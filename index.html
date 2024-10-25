@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>BaiTapTuan1</title>
+    <style>
+      h1 {
+        /* padding: 0;
+        margin: 0; */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Bài 3</h1>
+      <button bai3 style="margin-top: 5px; margin-bottom: 30px">click!</button>
+      <h1>Bài 4</h1>
+      <button bai4="confirm">Confirm</button>
+      <button bai4="alert">Alert</button>
+      <button bai4="wirte">Wirte</button>
+      <h1>Bài 5</h1>
+      <p>
+        Bài 5. Chương trình yêu cầu bạn nhập tên và tuổi, nếu tuổi nhỏ hơn 18
+        thì xuất ra màn hình thông tin tuổi hợp lệ, nếu không thì thông báo bạn
+        chưa đủ tuổi. Trong chương trình này, chúng ta sẽ dùng các biến, các
+        phát biểu điều kiện và các hàm.
+      </p>
+      <form action="" formBai5>
+        <label for=""> <b>Nhập tên:</b></label>
+        <input style type="text" name="fullname" placeholder="Nhập tên..." />
+        <div style="margin-top: 20px"></div>
+        <label for=""><b>Nhập tuổi:</b></label>
+        <input type="number" name="age" placeholder="Nhập tuổi ..." />
+        <button>Check</button>
+      </form>
+      <h1>Bài 6</h1>
+      <p>
+        Bài 6 Chương trình yêu cầu bạn nhập một biểu thức vào ô biểu thức, nhấn
+        nút tính toán và chương trình hiện giá trị kết quả vào ô kết quả. Chương
+        trình sử dụng sự kiện Onclick, lệnh điều kiện, và các hàm
+      </p>
+
+      <form action="" formBai6>
+        <p><b>Nhập biểu thức:</b></p>
+        <input type="text" bieuthuc />
+        <button>Tính</button>
+        <p><b>Kết quả:</b> <span spanBai6></span></p>
+      </form>
+      <!--  -->
+      <h1>Bài 7</h1>
+      <p>Sử dụng đối tượng checkbox để điều khiển chế độ bật tắt màn hình</p>
+
+      <p>Thay đổi màu màn hình</p>
+      <div bai7>
+        <input type="checkbox" name="" id="" />
+        <span>Màu đỏ</span>
+        <!-- <input style="margin-left: 20px" type="checkbox" name="" id="" />
+        <span>Màu xanh lá cây</span> -->
+      </div>
+
+      <!-- Bai8 -->
+      <h1>Bài 8</h1>
+      <p>
+        Sử dụng nút radio để thực hiện chế độ bật (tắt). Sự kiện Onclick trên
+        nút radio tương tự như đối với checkbox, chúng chỉ khác nhau cách dùng
+        trên form. Trên các nút radio, khi một nút được bật thì tất cả các nút
+        radio khác đều ở chế độ tắt, ta không thể thay đổi trạng thái của các
+        nút này như checkbox.
+      </p>
+
+      <form action="" bai8>
+        <p>Chọn chế độ màn hình</p>
+        <input type="radio" action="bat" /> Bật
+        <input type="radio" action="tat" /> Tắt
+      </form>
+
+      <!-- Bai9 -->
+      <h1>Bài 9</h1>
+      <p>
+        Tạo một trang đăng nhập như hình dưới đây và viết chương trình kiểm tra
+        tính hợp lệ của username và password:
+      </p>
+      <form action="" formBai9>
+        <label for=""> <b>Username</b></label>
+        <input
+          style
+          type="text"
+          name="fullname"
+          class="fullname"
+          placeholder="Nhập tên..."
+        />
+        <div style="margin-top: 20px"></div>
+        <label for=""><b>Password</b></label>
+        <input
+          type="password"
+          name="password"
+          class="password"
+          placeholder="Nhập password ..."
+        />
+        <div style="margin-top: 10px"></div>
+        <button action="login">login</button>
+        <button action="reset">Reset</button>
+      </form>
+
+      <!-- Bai 10 -->
+      <h1>Bài 10</h1>
+
+      <form action="" formBai10>
+        <h2>Mẫu điền thông tin</h2>
+        <label for=""> <b>Họ và tên:</b></label>
+        <input
+          style
+          type="text"
+          name="fullname"
+          class="fullname"
+          placeholder="Nhập tên..."
+        />
+        <div style="margin-top: 20px"></div>
+        <label for=""><b>Địa chỉ :</b></label>
+        <input
+          type="text"
+          name="address"
+          class=""
+          placeholder="Nhập password ..."
+        />
+        <div style="margin-top: 10px"></div>
+        <label for=""> <b>Số điện thoại</b></label>
+        <input
+          style
+          type="text"
+          name="phone"
+          class=""
+          placeholder="Nhập tên..."
+        />
+        <div>
+          <button
+            style="
+              border-radius: 10px;
+              background-color: rgb(55, 55, 240);
+              color: white;
+              padding: 4px 5px;
+            "
+          >
+            Hiển thị
+          </button>
+        </div>
+      </form>
+
+      <div class="" style="display: none" infor>
+        <h2>Thông tin cá nhân</h2>
+        <div>
+          <label for=""> <b>Họ và tên:</b></label>
+          <span></span>
+        </div>
+        <div>
+          <label for=""><b>Địa chỉ :</b></label>
+          <span></span>
+        </div>
+        <div>
+          <label for=""> <b>Số điện thoại</b></label>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- Bai 11 -->
+      <div>
+        <h1>Bài 11</h1>
+        <p>
+          Cho 2 radio button có cùng tên là gender (giới tính) gồm hai giá trị
+          là Nam và Nữ, hãy tạo ra một button và xử lý sự kiện khi click vào
+          button đó thì in ra giá trị của giới tính mà người dùng đã chọn (đã
+          checked).
+        </p>
+        <form action="" formBai11>
+          <input type="radio" name="" id="man" class="" gender="Nam" />Nam
+          <input type="radio" name="" id="wonman" gender="Nữ" /> Nữ
+          <div>
+            <button
+              buttonGender=""
+              style="
+                border-radius: 10px;
+                background-color: rgb(55, 55, 240);
+                color: white;
+                padding: 4px 5px;
+                margin-top: 10px;
+              "
+              type="button"
+            >
+              Hiển thị
+            </button>
+          </div>
+        </form>
+      </div>
+      <!--End Bai 11 -->
+      <!-- Bai 12 -->
+      <h1>Bài 12</h1>
+      <input type="checkbox" name="" id="" zingMp3 /> Bạn có thích ZingMp3 không
+      ?
+      <!--  End bai 12 -->
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
